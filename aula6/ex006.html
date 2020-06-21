@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Teste</title>
+    <style>
+        body{
+            background-color: grey;
+            color: white;
+            font-size: 14pt;
+            font-family: "Ubuntu", sans-serif;
+        }
+    </style>
+    <script defer>
+        var num1 = Number(window.prompt('Digite um número inteiro maior ou igual a 10'))
+        var num2 = Number(window.prompt('Digite um número inteiro menor ou igual a 10'))
+        var soma = num1 + num2
+        var sub = num1 - num2
+        var multi = num1 * num2
+        var divi = num1 / num2
+        var resto = num1 % num2
+        var poten = num1 ** num2
+        document.write(`${num1} + ${num2} = ${soma}</br>`)
+        document.write(`${num1} - ${num2} = ${sub}</br>`)
+        document.write(`${num1} x ${num2} = ${multi}</br>`)
+        document.write(`${num1} / ${num2} = ${divi}</br>`)
+        document.write(`${num1} % ${num2} = ${resto}</br>`)
+        document.write(`${num1} elevado à ${num2} = ${poten}`)
+    </script>
+</head>
+<body>
+</body>
+</html>

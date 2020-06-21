@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Teste</title>
+    <style>
+        body{
+            background-color: grey;
+            color: white;
+            font-size: 14pt;
+            font-family: "Ubuntu", sans-serif;
+        }
+    </style>
+    <script defer>
+        var real = Number.parseFloat(window.prompt(`Digite um número real`))
+        document.write(`O número digitado ${real} passado para 3 casas decimais e com vírgula fica ${real.toFixed(3).replace('.', ',')}`)
+        real.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(`</br>O número que digitou, quando convertido para moeda com a função '.toLocaleString()', 
+        fica: ${real.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} para Real do Brasil`)
+        document.write(`</br>O número que digitou, quando convertido para moeda com a função '.toLocaleString()', 
+        fica: ${real.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})} para Dólar dos EUA`)
+        document.write(`</br>O número que digitou, quando convertido para moeda com a função '.toLocaleString()', 
+        fica: ${real.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})} para Euro da Europa`)
+
+    </script>
+</head>
+<body>
+</body>
+</html>

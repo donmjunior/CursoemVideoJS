@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(150, 136, 121);
+}
+
+section {
+    background-color: rgb(185, 185, 185);
+    width: 240px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.dados {
+    align-items: center;
+}
+
+.resposta {
+    align-items: flex-start ;
+}
+
+input {
+    height: 18px;
+    width: 140px;
+    border: 0;
+    border-radius: 8px;
+}
+
+#botao {
+    margin-top: 25px;
+    background-color: var(--button-color);
+    color: white;
+    font-weight: bolder;
+}
+
+#botao:hover {
+    background-color: var(--button-color-hover);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+hr{
+    height: 3px;
+    border: 0;
+    background-image: linear-gradient(to right, transparent, rgb(150, 150, 150), transparent);
+}
+
+p {
+    font-size: 15px;
+}

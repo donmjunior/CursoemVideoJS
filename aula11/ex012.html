@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com if, else e ifelse</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        Digite a velocidade: <input type="number" name="vel" id="vel"> Km/h
+        <input id="verifica" type="button" value="Verificar" onclick="clicar()">
+        <div id="result">Resultado...</div>
+    </div>
+
+    <script defer>
+        function clicar() {
+            var vel = document.querySelector('input#vel')
+            var result = document.querySelector('div#result')
+            var valor = Number(vel.value)
+            // result.innerHTML = `Sua velocidade é ${valor}`
+            result.innerHTML = `Sua velocidade é de <strong>${valor}km/h</strong>.</br>`
+            if (valor > 60) {
+                result.innerHTML += `Você foi MULTADO!`
+            } else {
+                result.innerHTML += `Você esté dentro do limite de velocidade.</br > Se proteja.Use cinto de segurança!`
+            }
+        }
+    </script>
+</body>
+
+</html>

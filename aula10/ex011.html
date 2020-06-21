@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com o usuário</title>
+    <style>
+        #result {
+            color: red;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txt1" id="txt1"> +
+    <!-- Como os elementos input ficarão lado a lado, o '+' mostrará a função dos mesmos sem dar detalhes -->
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="result">Resultado</div>
+    <div class="inputs">
+        <h3>Botão</h3>
+        <input type="button">
+        <h3>Checkbox</h3>
+        <input type="checkbox">
+        <h3>Color</h3>
+        <input type="color">
+        <h3>Date</h3>
+        <input type="date">
+        <h3>Tempo de data local</h3>
+        <input type="datetime-local">
+        <h3>Email</h3>
+        <input type="email">
+        <h3>Arquivo</h3>
+        <input type="file">
+        <h3>Hidden</h3>
+        <input type="hidden">
+        <h3>Imagem</h3>
+        <input type="image">
+        <h3>Mês</h3>
+        <input type="month">
+        <h3>Número</h3>
+        <input type="number">
+        <h3>Senha</h3>
+        <input type="password">
+        <h3>Radio</h3>
+        <input type="radio">
+        <h3>Range</h3>
+        <input type="range">
+        <h3>Reset</h3>
+        <input type="reset">
+        <h3>Search</h3>
+        <input type="search">
+        <h3>Submit</h3>
+        <input type="submit">
+        <h3>Tel</h3>
+        <input type="tel">
+        <h3>Texto</h3>
+        <input type="text"> (default value)
+        <h3>Tempo</h3>
+        <input type="time">
+        <h3>URL</h3>
+        <input type="url">
+        <h3>Semana</h3>
+        <input type="week">
+    </div>
+
+    <script defer>
+        function somar() {
+            var n1 = Number(document.querySelector('input#txt1').value)
+            var n2 = Number(document.querySelector('input#txt2').value)
+            var res = document.getElementById('result')
+            var soma = n1 + n2
+            res.innerHTML = `${n1} + ${n2} = <strong>${soma}</strong>`
+        }
+    </script>
+</body>
+
+</html>

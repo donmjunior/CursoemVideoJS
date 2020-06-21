@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area{
+            background: pink;
+            color: aquamarine;
+            width: 200px;
+            height: 300px;
+            font: normal 15pt 'Exo 2';
+            line-height: 150px;
+            text-align: center;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Esta é a forma de chamar o método 'clicar()' pelo próprio HTML -->
+    <!-- <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="sair()"> -->
+    <div id="area">
+        Exibition... 
+    </div>
+
+    <script defer>
+        var a = document.querySelector('div#area')
+        a.addEventListener('click', clicar)//Diferente da chamada da instrução em HTML comentada acima, a função no JS é chamada sem os parênteses
+        a.addEventListener('mouseover', entrar)
+        a.addEventListener('mouseout', sair)
+        //Não esquecer de estudar outros eventos como os de acesso pelo usuário por meio de tablets ou smartphones
+        //Este é o método clicar que será chamado quando o usuário clicar no objeto
+        function clicar(){
+            a.innerHTML = 'Clicou!!'
+            a.style.background = 'black'
+            //var area = document.querySelector('div#area')// ou var area = window.document.querySelector('div#area')
+            //area.innerHTML = 'Clicou!!!'
+        }
+        //Esta função será chamada quando o mouse entrar na área do objeto
+        function entrar(){
+            a.innerHTML = 'Entrou!!!'
+            a.style.background = 'green'
+            a.style.color = 'white'
+        }
+
+        function sair(){
+            a.innerHTML = 'Saiu!!!'
+            a.style.background = 'pink'
+            a.style.color = 'blue'
+        }
+    </script>
+</body>
+</html>

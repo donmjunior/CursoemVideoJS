@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo!</title>
+    <link rel="stylesheet" href="/exercicio1/styles/index.css">
+</head>
+<body onload="carregar()">
+    <header id="cabecalho">
+        <h1 id="titulo">Bem vindo!</h1>
+    </header>
+
+    <section id="bloco">
+        <div id="inter">
+            Mensagem...
+        </div>
+
+        <div id="foto">
+            <img id="imagem" src="/exercicio1/assets/manha.png" alt="manhã">
+        </div>
+
+        <div id="botao">
+            <button id="page-imc" onclick="redirectImc()">Calculadora IMC</button>
+            <button id="page-counter" onclick="redirectLoop()">Contador Loop</button>
+            <button id="page-tabuada" onclick="redirectTab()">Tabuada</button>
+            <button id="page-tabuada" onclick="redirectFunct()">Treino Array</button>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <p>&copy; Donm Júnior</p>
+    </footer>
+    
+    <script defer src="/exercicio1/scripts/index.js"></script>
+</body>
+</html>

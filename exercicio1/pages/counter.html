@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/exercicio1/styles/index.css">
+    <link rel="stylesheet" href="/exercicio1/styles/counter.css">
+    <title>Contador Loop</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bora contar!!!</h1>
+    </header>
+
+    <section>
+        <div class="dados">
+            <div class="numeros">
+                <label for="inicio">Início</label>
+                <input type="number" name="inicio" id="inicio">
+            </div>
+            <div class="numeros">
+                <label for="fim">Fim</label>
+                <input type="number" name="fim" id="fim">
+            </div>
+            <div class="numeros">
+                <label for="passo">Passo</label>
+                <input type="number" name="passo" id="passo">
+            </div>
+            <input type="button" value="Contar" onclick="contar()" id="botao">
+        </div>
+        <hr>
+        <div class="resposta">
+            <p id="dialogo">Aguardando...</p>
+            <p id="result"></p>
+        </div>
+    </section>
+    <script src="/exercicio1/scripts/counter.js"></script>
+</body>
+
+</html>

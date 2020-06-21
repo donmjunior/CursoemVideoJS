@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Teste</title>
+    <style>
+        body{
+            background-color: grey;
+            color: white;
+            font-size: 14pt;
+            font-family: "Ubuntu", sans-serif;
+        }
+    </style>
+    <script defer>
+    /*
+        window.alert('Minha primeira mensagem!')
+        window.confirm('Está gostando de aprender JS?')
+        var nome = window.prompt('Qual o seu nome? ')
+        window.alert('Seja bem vindo, ' + nome + '!!!')*/
+        var num1 = Number.parseFloat(window.prompt('Digite um número!'))//A função prompt funciona recebendo valores 'string', por isso é necessário fazer a conversão
+        var num2 = Number(window.prompt('Digite outro número!'))//Posso utilizar apenas 'Number' para realizar a conversão também deixando para utilizar 'parseFloat' ou 'parseInt' apenas quando precisar forçar o usuário a trabalhar com esses tipos de variáveis
+        var result = num1 + num2
+        window.alert('A soma dos números dá: ' + String(result))//E caso eu queira converter um valor para 'string' posso usar 'String(result)' ou 'result.toString'
+        window.alert(`Exibição do resultado utilizando as crazes para isolar o texto e a técnica template strig
+        com $ e {}. E o resultado é ${result}`)
+    </script>
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+    <h2>Hello world!</h2>
+    <p>Como sugerido pelo professor Gustavo Guanabara, vamos evitar a maldição do olá mundo.</p>
+    <!-- <p>Este parágrafo é uma tentativa de incluir o valor da variável criada em Javascript neste texto.
+        E se deu tudo certo o valor da variável é:
+    </p> -->
+</body>
+</html>

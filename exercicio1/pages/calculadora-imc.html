@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="/exercicio1/styles/imc.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cálculo de Índice de Massa Corporal</h1>
+        <p>Fórmula desenvolvida pelo polímata Hindemburg Melão Jr e considerada a mais precisa para o cálculo do IMC</p>
+    </header>
+    <section>
+        <div id="formulario">
+            <p id="data">Ano de nascimento:
+                <input type="number" name="nascimento" id="nascimento" placeholder="aaaa">
+            </p>
+            <p id="sexo">Sexo:
+                <input type="radio" name="sexo" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <hr>
+            <p id="imc-input">Dados para cálculo do IMC
+                <input type="number" name="peso" id="peso" placeholder="Peso">
+                <input type="number" name="altura" id="altura" placeholder="Altura">
+            </p>
+            <hr>
+            <p>
+                <input id="page-imc" type="button" value="Calcular" onclick="calculadora()">
+            </p>
+        </div>
+
+        <div id="result">
+            <p id="res"></p>
+            <p id="texto">Aguardando...</p>
+        </div>
+    </section>
+
+    <script defer src="/exercicio1/scripts/imc.js"></script>
+</body>
+
+</html>

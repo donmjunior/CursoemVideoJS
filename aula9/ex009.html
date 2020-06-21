@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando DOM</title>
+    <style>
+        body{
+            background-color: grey;
+            color: aquamarine;
+            font: normal 18pt "Ubuntu";
+            /*
+            #id
+            .class
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudo com <strong>DOM</strong></h1>
+    <P>Aqui vai algum resultado</P>
+    <p>Aprendendo a utilizar o <em><strong>DOM</strong></em> em <u>Javascript</u></p>
+    <p>A árvore DOM constitui uma cadeia de elementos hierárquicos que podem ser acessados à partir do 
+        elemento 'window' (o pai de todos).</br>
+        Esses elementos podem ser acessados por:</br>
+        Marca - São as tags ou elementos nativos da linguagem HTML utilizando '.getElementsByTagName()' em 'document'</br>
+        ID - São identidades geradas nos elementos HTML como na instrução 'div id="id"' e utilizando '.getElementById()'</br>
+        Nome - Da mesma forma que no elemento ID 'div name="nome"' utilizando 'getElementsByName()'</br>
+        Classe - Também segue a mesma regra 'div class="classe"' utilizando 'getElementsByClassName()'</br>
+        Seletor - Destina pelo seletor CSS utilizando 'querySelector()' ou 'querySelectorAll()'
+    </p>
+    <div id="texto">Clique aqui</div>
+    <script defer>
+        //A instrução 'getElementsByTagName' pega todos os elementos que contenham a mesma marca
+        var txt1 = document.getElementsByTagName('p')[1]//Neste array, o número corresponde ao qual elemento 'p' está relacionado
+        //Será reimpresso o texto deste elemento.
+        document.write(`Reimprimindo o texto do parágrafo por Marca => ` + txt1.innerText)//Texto cru sem formatação HTML
+        document.write(`</br>Reimprimindo o texto do parágrafo por Marca => ` + txt1.innerHTML)//Texto com a formatação HTML
+        //Também posso criar instruções adicionais para esta marca utilizando o Javascript
+        txt1.style.color = 'white'
+        //E com o DOM, posso estilizar outros componentes da página
+        var corpo = window.document.querySelector('div#texto')
+        corpo.style.background = 'green'
+    </script>
+</body>
+</html>
