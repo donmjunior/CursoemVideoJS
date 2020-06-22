@@ -43,6 +43,7 @@ div{
     font-weight: bolder;
     font-size: 22px;
     color: white;
+    margin-bottom: 5px;
 }
 
 #page-imc:hover{
@@ -50,41 +51,6 @@ div{
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 /* --------------------------------------------------------------- */
-#page-counter{
-    height: 40px;
-    width: 240px;
-    border: 0;
-    background-color: var(--button-color);
-    border-radius: 8px;
-    font-family: "Exo 2", sans-serif;
-    font-weight: bolder;
-    font-size: 22px;
-    color: white;
-    margin-top: 5px;
-}
-
-#page-counter:hover{
-    background-color: var(--button-color-hover);
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-/* --------------------------------------------------------------- */
-#page-tabuada{
-    height: 40px;
-    width: 240px;
-    border: 0;
-    background-color: var(--button-color);
-    border-radius: 8px;
-    font-family: "Exo 2", sans-serif;
-    font-weight: bolder;
-    font-size: 22px;
-    color: white;
-    margin-top: 5px;
-}
-
-#page-tabuada:hover{
-    background-color: var(--button-color-hover);
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
 
 footer{
     font-size: 12px;
